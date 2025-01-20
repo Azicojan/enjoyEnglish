@@ -1,0 +1,94 @@
+/* General header styling */
+.header {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure the header spans the full width */
+  background-color: #f4f4f9;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Navigation container */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #25a3ac;
+  align-items: center;
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual navigation item*/
+.nav-item {
+  font-size: 1.1rem;
+}
+
+/* Link styling */
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Link hover effect */
+.nav-link:hover {
+  color: #25a4ad;
+}
+
+/* Auth actions container */
+.auth-actions {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-left: 30px;
+  border-left: 1px solid rgb(185, 185, 185);
+}
+
+/* Log in link */
+.login-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #25a4ad;
+}
+
+/* Sign up button  */
+.signup-button {
+  text-decoration: none;
+
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #25a4ad;
+  color: #f4f4f9;
+}

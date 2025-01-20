@@ -1,0 +1,46 @@
+/* About page container */
+.about-container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa; /* Neutral background */
+  min-height: 100vh; /* Full page height */
+  color: #333; /* Text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For positioning background shapes */
+  overflow: hidden; /* Prevent shapes from overflowing */
+}
+
+/* Title styling */
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 800px; /* Restrict width for readability */
+  margin: 0 auto;
+  z-index: 1; /* Ensures the title is above the shapes */
+}
+
+/* Circle background shapes */
+.circle {
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.2); /* Light grey with transparency */
+  border-radius: 50%; /* Makes the shape circular */
+  z-index: 0; /* Places behind the content */
+}
+
+/* Rounded square background shapes */
+.rounded-square {
+  position: absolute;
+  background-color: rgba(200, 200, 200, 0.2); /* Light grey with transparency */
+  border-radius: 20px; /* Rounded corners */
+  z-index: 0; /* Places behind the content */
+}
+
+/* Triangle background shapes */
+.triangle {
+  position: absolute;
+  z-index: 0; /* Places behind the content */
+}

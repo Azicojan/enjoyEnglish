@@ -1,0 +1,47 @@
+/* Module1 page container */
+.module1-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Full height for consistency */
+  /*background-image: url("../../src/assets/pumpkin.svg");
+  background-repeat: no-repeat; /* Prevent repeating if not a pattern */
+  /* background-size: cover; /* Scale to cover the whole viewport */
+  /* background-position: center; /* Center the image */
+}
+
+/* Title styling */
+.module1-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Lesson list container */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Align items to the left */
+  max-width: 600px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center align the list */
+}
+
+/* Lesson item styling */
+.lesson-item {
+  margin-bottom: 10px;
+}
+
+/* Lesson link styling */
+.lesson-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.lesson-link:hover {
+  color: #25a4ad;
+}

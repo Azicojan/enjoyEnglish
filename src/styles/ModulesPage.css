@@ -1,0 +1,61 @@
+/* Modules page container */
+.modules-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Ensure the page covers the full height */
+}
+
+/* Title styling */
+.modules-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Modules list container */
+.modules-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Module card styling */
+.module-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 200px;
+  aspect-ratio: 2 / 3; /* Ensures height is 1.5 times the width */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for module cards */
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Module link styling */
+.module-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.module-link:hover {
+  color: #0056b3;
+}

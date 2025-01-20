@@ -1,0 +1,77 @@
+/* Lesson page container */
+.lesson1-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh; /* Full page height */
+  position: relative; /* For fixed header */
+}
+
+/* Fixed Lesson Header */
+.lesson1-header {
+  position: fixed; /* Fixes the header at the top */
+  top: 80px;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #cedef5; /* Matches the header background */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Back Arrow */
+.back-arrow {
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.back-arrow:hover {
+  color: #0056b3;
+}
+
+/* Lesson Title */
+.lesson1-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Lesson Content */
+.lesson1-content {
+  padding-top: 85px; /* Add padding to avoid overlap with the fixed header */
+  max-width: 790px; /* Restrict width for readability */
+  margin: 0 auto;
+  text-align: center; /* Align content to the center */
+  align-items: center;
+}
+
+/* Individual Sentence */
+.lesson1-sentence {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Audio Container */
+.audio-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.audio-player {
+  width: 100%; /* Make the audio player responsive */
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.lesson1-text {
+  max-width: 700px;
+  margin: 30px auto;
+}

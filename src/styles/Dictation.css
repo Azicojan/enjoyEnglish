@@ -1,0 +1,157 @@
+.dictation-container {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 52%;
+  margin: 85px auto;
+}
+
+.navigation-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.audio-container {
+  margin: 10px 0;
+  text-align: center;
+}
+
+textarea {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgb(131, 181, 245);
+}
+
+.validation-area {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.check-dictation-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.check-dictation-button:hover {
+  background-color: #0056b3;
+}
+
+.check-dictation-button:focus {
+  outline: none; /* Prevents border focus outline */
+}
+
+.check-dictaion-button:active {
+  outline: none;
+}
+
+.navigation-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.validation-message {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  flex: 1;
+  text-align: left;
+}
+
+.masked-sentence {
+  margin: 10px 0 0 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.error-message {
+  color: rgb(248, 135, 7);
+}
+
+.masked-sentence {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.masked-sentence .error {
+  color: red;
+  font-weight: bold;
+}
+
+.next-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #218838;
+}
+.next-button:focus {
+  outline: none; /* Prevents border focus outline */
+  border-color: #ddd;
+}
+
+.next-button:active {
+  outline: none;
+  border-color: #ddd;
+}
+
+.completion-message {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  color: green;
+}
+
+.restart-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
+
+.restart-button:focus {
+  outline: none; /* Prevents border focus outline */
+  border-color: #ddd;
+}
+
+.restart-button:active {
+  outline: none;
+  border-color: #ddd;
+}

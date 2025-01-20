@@ -1,0 +1,50 @@
+/* General footer styling */
+.footer {
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer links list */
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+/* Footer link items */
+.footer-item {
+  font-size: 1rem;
+}
+
+/* Footer links */
+.footer-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Footer links hover effect */
+.footer-link:hover {
+  color: #25a4ad;
+}
+
+/* Footer text */
+.footer-text {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0;
+}

@@ -1,0 +1,165 @@
+/* styles/Flashcard.css */
+
+.flashcard {
+  width: 50%;
+  height: 25rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  margin: 10px;
+}
+
+.flashcard-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ensures only one side is visible at a time */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box;
+  transform-style: preserve-3d; /* Ensures 3D perspective for both sides */
+  transition: transform 0.6s ease-in-out; /* Smooth flip transition */
+}
+
+/* Front side */
+.front {
+  background-color: #f5e9f8;
+  color: rgb(48, 48, 48);
+  transform: rotateY(0deg); /* Default state */
+}
+
+/* Back side */
+.back {
+  background-color: #e6eef7;
+  color: rgb(48, 48, 48);
+  transform: rotateY(180deg); /* Hidden when not flipped */
+}
+
+/* Flip effect */
+.flashcard.flipped .front {
+  transform: rotateY(180deg); /* Moves front side out of view */
+}
+
+.flashcard.flipped .back {
+  transform: rotateY(0deg); /* Brings back side into view */
+  position: relative;
+}
+
+/* Flashcard list container */
+.flashcard-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 85px; /* Add padding to avoid overlap with the fixed header */
+  margin: 0 auto;
+  align-items: center;
+}
+
+.flashcard-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.flashcard-status {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(90, 90, 129);
+}
+
+.flashcard-button {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 0px 18px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  color: rgb(90, 90, 129);
+  transition: background-color 0.3s, border-color 0.3s, outline 0.3s;
+  outline: none; /* Removes focus outline */
+}
+
+.flashcard-button:hover {
+  background-color: #e6e6e6;
+  border-color: #ddd; /* Ensures no standout border */
+}
+
+.flashcard-button:focus {
+  outline: none; /* Prevents border focus outline */
+  border-color: #ddd;
+}
+
+.flashcard-button:active {
+  outline: none;
+  border-color: #ddd;
+}
+
+.flashcard-button:disabled {
+  cursor: not-allowed; /* Show a not-allowed cursor */
+  opacity: 0.5; /* Make the button appear dim */
+  background-color: #f5f5f5; /* Optional: Change the background color */
+  color: #bbb; /* Optional: Change the text color */
+}
+
+/* Styling for the button */
+.shuffle-button {
+  /*margin-top: 16px;*/
+
+  margin-left: 30px;
+  height: 50px;
+  padding: 15px;
+  font-size: 16px;
+  color: rgb(90, 90, 129);
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s, outline 0.3s;
+}
+
+.shuffle-button:focus {
+  outline: none; /* Prevents border focus outline */
+  border-color: #ddd;
+}
+
+.shuffle-button:active {
+  outline: none;
+  border-color: #ddd;
+}
+
+.shuffle-button:hover {
+  background-color: #e6e6e6;
+  border-color: #ddd; /* Ensures no standout border */
+}
+
+.audio-icon {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  font-size: 1.5rem;
+  color: #949494;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.audio-icon:hover {
+  color: #0056b3;
+}
