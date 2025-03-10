@@ -50,6 +50,7 @@ textarea:focus {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .check-dictation-button:hover {

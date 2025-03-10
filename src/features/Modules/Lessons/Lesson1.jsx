@@ -9,6 +9,7 @@ import SplitTracks from "../../../components/SplitTracks";
 import DragAndDrop from "../../../components/DragAndDrop";
 import Dictation from "../../../components/Dictation";
 import OutputPractice from "../../../components/OutputPractice";
+import Pronunciation from "../../../components/Pronunciation";
 
 const Lesson1 = () => {
   const navigate = useNavigate(); // Hook for navigation
@@ -53,6 +54,7 @@ const Lesson1 = () => {
       <DragAndDrop />
       <Dictation />
       <OutputPractice />
+      <Pronunciation />
     </div>
   );
 };

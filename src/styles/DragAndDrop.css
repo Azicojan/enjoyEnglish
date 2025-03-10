@@ -97,6 +97,7 @@
   border-radius: 15px;
   cursor: pointer;
   outline: none;
+  border-radius: 30px;
 }
 
 .check-button:focus {
